@@ -47,6 +47,13 @@ public class Main {
             rs=inputString.substring(pos+1,inputString.length());
             return IntegerSubtract.subtract(Integer.valueOf(ls),Integer.valueOf(rs));
         }
+        pos=inputString.indexOf('*');
+        if(pos!=-1)
+        {
+            ls=inputString.substring(0,pos);
+            rs=inputString.substring(pos+1,inputString.length());
+            return IntegerMultiply.multiply(Integer.valueOf(ls),Integer.valueOf(rs));
+        }
         return -1;
     }
 }
