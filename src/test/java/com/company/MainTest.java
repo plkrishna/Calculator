@@ -12,5 +12,6 @@ public class MainTest {
         Assert.assertEquals(20+30,Main.performOperationAndReturnResult("20+30"));
         Assert.assertEquals(20-30,Main.performOperationAndReturnResult("20-30"));
         Assert.assertEquals(20/3,Main.performOperationAndReturnResult("20/3"));
+        Assert.assertEquals(20*30,Main.performOperationAndReturnResult("20*30"));
     }
 }
