@@ -47,21 +47,20 @@ public class Main {
             rs=inputString.substring(pos+1,inputString.length());
             return IntegerSubtract.subtract(Integer.valueOf(ls),Integer.valueOf(rs));
         }
-<<<<<<< HEAD
-        pos=inputString.indexOf('/');
-=======
         pos=inputString.indexOf('*');
->>>>>>> ae1fe0e (Added * operation)
         if(pos!=-1)
         {
             ls=inputString.substring(0,pos);
             rs=inputString.substring(pos+1,inputString.length());
-<<<<<<< HEAD
-            return IntegerDivide.divide(Integer.valueOf(ls),Integer.valueOf(rs));
-=======
             return IntegerMultiply.multiply(Integer.valueOf(ls),Integer.valueOf(rs));
->>>>>>> ae1fe0e (Added * operation)
         }
+        pos=inputString.indexOf('*');
+        if(pos!=-1)
+        {
+            ls=inputString.substring(0,pos);
+            rs=inputString.substring(pos+1,inputString.length());
+            return IntegerDivide.divide(Integer.valueOf(ls),Integer.valueOf(rs));
+        }    
         return -1;
     }
 }
